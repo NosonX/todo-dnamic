@@ -1,0 +1,32 @@
+{
+  "name": "todo-dnamic",
+  "version": "0.0.1",
+  "description": "ToDo app to learn the basics of NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=app:* nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NosonX/todo-dnamic.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Eduardo A Montero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NosonX/todo-dnamic/issues"
+  },
+  "homepage": "https://github.com/NosonX/todo-dnamic#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
