@@ -9,7 +9,8 @@ const debug = require('debug')('app:server');
 app.use(morgan('tiny'));
 
 app.get('/', (req, res) => {
-  res.send('This is the home route v4 ' + user);
+  const { user } = req.query;
+  res.send('Home route' + user);
 });
 
 app.get('/contact', (req, res) => {
