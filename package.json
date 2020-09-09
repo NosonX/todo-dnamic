@@ -2,9 +2,9 @@
   "name": "todo-dnamic",
   "version": "0.0.1",
   "description": "ToDo app to learn the basics of NodeJS",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "cross-env DEBUG=app:* nodemon --exec babel-node app.js",
+    "start": "cross-env DEBUG=app:* nodemon --exec babel-node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
