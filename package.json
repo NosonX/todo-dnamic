@@ -4,7 +4,7 @@
   "description": "ToDo app to learn the basics of NodeJS",
   "main": "app.js",
   "scripts": {
-    "start": "DEBUG=app:* nodemon --exec babel-node app.js",
+    "start": "cross-env DEBUG=app:* nodemon --exec babel-node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.5",
     "chalk": "^4.1.0",
+    "cross-env": "^7.0.2",
     "debug": "^4.1.1",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
