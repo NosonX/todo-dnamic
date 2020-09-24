@@ -6,7 +6,6 @@ import debugLib from 'debug';
 import homeRouter from './routes/homeRouter';
 import tasksRouter from './routes/tasksRouter';
 
-
 const app = express();
 const debug = debugLib('app:server');
 const port = 3000;
@@ -19,4 +18,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', homeRouter);
 app.use('/tasks', tasksRouter);
 
-app.listen(port, () => debug(`App running on: ${chalk.blue('http://localhost:' + port)}`));
+app.listen(port, () => debug(`App running on: ${chalk.blue(`http://localhost:${port}`)}`));

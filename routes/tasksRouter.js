@@ -7,7 +7,7 @@ router
     res.render('pages/tasks');
   })
   .get('/create', (req, res) => {
-    res.render('pages/createTask')
+    res.render('pages/createTask');
   })
   .get('/:id', (req, res) => {
     const { id } = req.params;
