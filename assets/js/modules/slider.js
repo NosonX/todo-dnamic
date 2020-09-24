@@ -1,1 +1,3 @@
-console.log('IMPORTED SLIDER');
+const slider = {};
+
+export default slider;
