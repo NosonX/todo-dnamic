@@ -5,6 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "cross-env DEBUG=app:* nodemon --exec babel-node server.js",
+    "webpack:build": "webpack --config ./webpack.config.js",
+    "webpack:watch": "npm run webpack:build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,5 +34,28 @@
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.0",
+    "css-loader": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "mini-css-extract-plugin": "^0.11.1",
+    "postcss-loader": "^4.0.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public",
+      "assets"
+    ]
   }
 }
