@@ -1,8 +1,24 @@
 @import 'utilities/variables';
+@import "partials/login";
+@import "partials/register";
 
 body {
   background-color: $primary-color;
-  border-radius: 1px;
-  color: skyblue;
+  border-radius: 2px;
+  color: black;
   font-family: sans-serif;
+}
+.abs-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+div.container-form{
+  height: 60vh;
+  width: 30vw;
+  border-radius: 2px;
+  padding: 15px;
+
 }

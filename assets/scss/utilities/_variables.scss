@@ -1,2 +1,3 @@
-$primary-color: tomato;
+@import "~bootstrap/scss/bootstrap";
+$primary-color: $primary;
 $secondary-color: steelblue;
