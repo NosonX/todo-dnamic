@@ -1,8 +1,7 @@
 @import 'utilities/variables';
+@import "~bootstrap/scss/bootstrap";
+@import 'partials/navbar';
 
-body {
-  background-color: $primary-color;
-  border-radius: 1px;
-  color: skyblue;
-  font-family: sans-serif;
+#tasks-container, .description{
+    margin-top: 5%;
 }

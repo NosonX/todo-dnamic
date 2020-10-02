@@ -29,13 +29,16 @@
     "@babel/core": "^7.11.5",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.5",
+    "bootstrap": "^4.5.2",
     "chalk": "^4.1.0",
     "cross-env": "^7.0.2",
     "debug": "^4.1.1",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "jquery": "^3.5.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
+    "popper.js": "^1.16.1",
     "pre-commit": "^1.2.2"
   },
   "devDependencies": {
@@ -64,5 +67,7 @@
       "assets"
     ]
   },
-  "pre-commit": ["lint"]
+  "pre-commit": [
+    "lint"
+  ]
 }

@@ -1,5 +1,27 @@
 <%- include('../partials/head') %>
 
-<h1>Tarea con el id <%= id %></h1>
+<div id="tasks-container" class="container">
 
-<%- include('../partials/foot') %>
+    <div class="row">
+        <div class="col-6">
+            <h1>Title: Sample Task</h1>
+        </div>
+
+        <div class="col-6">
+            <div class="text-right">
+                <button type="button" class="btn btn-primary">Mark as completed</button>
+                <button type="button" class="btn btn-success">Edit</button>
+                <button type="button" class="btn btn-danger">Remove</button>    
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <h3>Description</h3>
+        <p>A task to see how it looks.</p>
+        <hr>
+        <div class="row">
+            <div class="col-6">Created at: 20/8/2020 12:30pm | Last modified: 20/8/2020 12:35pm</div>
+            <div class="col-6 justify-content-end"><div class="text-right">Created by: @someone</div></div>
+        </div>
+    </div>
+</div>

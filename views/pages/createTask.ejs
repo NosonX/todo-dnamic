@@ -1,5 +1,27 @@
 <%- include('../partials/head') %>
 
-<h1>Create Task Form</h1>
+<div id="tasks-container" class="container">
 
-<%- include('../partials/foot') %>
+    <div class="row">
+        <div class="col-6">
+            <h1>Edit Task</h1>
+        </div>
+    </div>
+
+<div class="description">
+    <form>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input class="form-control" id="title" name="title">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-outline-danger">Cancel</button>
+          <button type="button" class="btn btn-success">Update Task</button>
+      </form>
+
+</div>
+
+</div>

@@ -4,7 +4,7 @@ const router = Router();
 
 router
   .get('/', (req, res) => {
-    res.render('pages/tasks');
+    res.render('pages/task');
   })
   .get('/create', (req, res) => {
     res.render('pages/createTask');

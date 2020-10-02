@@ -1,5 +1,45 @@
 <%- include('../partials/head') %>
 
-<h1>Tasks</h1>
+<div id="tasks-container" class="container">
 
-<%- include('../partials/foot') %>
+    <div class="row">
+        <div class="col-6">
+            <h1>Todo List</h1>
+        </div>
+
+        <div class="col-6">
+            <div class="text-right">
+                <button type="button" class="btn btn-success">Create new task</button>
+            </div>
+        </div>
+    </div>
+
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col" class="text-right">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <input class="form-check-input position-static" type="checkbox" aria-label="...">
+            </div></th>
+            <td>Sample task</td>
+            <td>A task to see how it looks.</td>
+            <td class="text-right">
+                <button type="button" class="btn btn-outline-primary">View</button>
+                <button type="button" class="btn btn-outline-success">Edit</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>
+
+</div>
